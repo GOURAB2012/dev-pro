@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo title</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- External Js linked -->
+    <script defer src=""></script> <!-- defer is used to tell the browser that load parallel -->
+</head>
+
+<body>
+    <h1 id="heading" myattribute='sibu'>Hello World!!</h1>
+
+    <!-- <input id="input" type="text">
+	<button onclick="save();">Save</button> -->
+
+    <!-- <button onclick="count();">+ Add</button>
+
+    <img id="light" class="off-light" onclick="lightOnOff();" src="https://www.w3schools.com/js/pic_bulboff.gif"
+        alt="" /> -->
+<!-- signup form -->
+    <form action="" method="get" id="signup-form" onsubmit="prevent(event)">
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input required id="name" name="name" type="text">
+        </div>
+
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input required id="email" name="email" type="email">
+        </div>
+
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input required id="password" name="password" type="password">
+        </div>
+        <button id="btn" type="submit" class="btn" onclick="saveForm()">Sign up</button>
+        <button id="re-btn" type="submit" class="btn" onclick="redirect()">Sign In</button>
+    </form>
+    <!-- signin form -->
+
+
+    <form action="" method="get" id="signin-form" onsubmit="prevent(event)">
+        
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input required id="s-email" name="email" type="email">
+        </div>
+
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input required id="s-password" name="password" type="password">
+        </div>
+        <button id="sign-in" type="submit" class="btn" onclick="signIn()">Sign In</button>
+    </form>
+<div id="dash-board">
+    <h1>welcome to our page</h1>
+    <button id="sign-out" onclick="signout()">sign out</button>
+</div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+#signup-form{
+    display: block;
+
+}
+#signin-form{
+    display: none;
+}
+#dash-board{
+    display: none;
+}
